@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wiki-Knight | Contacto</title>
+  <link rel="icon" href="wk-logo.png" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="components.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__brand">
+      <img src="wk-logo.png" alt="Logo Wiki-Knight" class="brand__logo" />
+      <h1 class="brand__title">Wiki-Knight</h1>
+    </div>
+    <nav class="nav" aria-label="Menú principal">
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul id="menu" class="nav__list">
+        <li><a href="index.html" class="nav__link">Inicio</a></li>
+        <li><a href="hk_lore.html" class="nav__link">Hollow Knight</a></li>
+        <li><a href="sk_lore.html" class="nav__link">Silksong</a></li>
+        <li><a href="p.html" class="nav__link">Personajes</a></li>
+        <li><a href="Galeria.html" class="nav__link">Galería</a></li>
+        <li><a href="Contacto.html" class="nav__link is-active">Contacto</a></li>
+      </ul>
+      <button class="theme__toggle" id="themeToggle" aria-label="Cambiar tema">
+        <img src="moon-1254-svgrepo-com.svg" alt="Modo oscuro" />
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2 class="section__title">Contacto</h2>
+      <article class="article">
+        <p class="article__text">¡Envíanos un comentario o contribución! 🥐</p>
+      </article>
+
+      <form class="form" id="contactForm" novalidate>
+        <div class="form__group">
+          <label for="name" class="form__label">Nombre 🕷️</label>
+          <input type="text" id="name" name="name" class="form__input" placeholder="Tu nombre" required minlength="2" />
+          <small class="form__error" id="errorName"></small>
+        </div>
+        <div class="form__group">
+          <label for="email" class="form__label">Email 🐌</label>
+          <input type="email" id="email" name="email" class="form__input" placeholder="tucorreo@ejemplo.com" required />
+          <small class="form__error" id="errorEmail"></small>
+        </div>
+        <div class="form__group">
+          <label for="message" class="form__label">Mensaje 🐝</label>
+          <textarea id="message" name="message" class="form__input" rows="5" placeholder="Tu mensaje" required minlength="10" maxlength="300"></textarea>
+          <small class="form__error" id="errorMessage"></small>
+        </div>
+        <div class="form__actions">
+          <button type="submit" class="btn btn--primary">Enviar</button>
+          <button type="reset" class="btn btn--ghost">Limpiar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">© 2025 Wiki-Knight. Proyecto fan sin fines de lucro.</p>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <script src="tema.js" defer></script>
+  <script src="contacto.js" defer></script>
+</body>
+</html>

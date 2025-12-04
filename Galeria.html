@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wiki-Knight | Galería</title>
+  <link rel="icon" href="wk-logo.png" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="components.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__brand">
+      <img src="wk-logo.png" alt="Logo Wiki-Knight" class="brand__logo" />
+      <h1 class="brand__title">Wiki-Knight</h1>
+    </div>
+    <nav class="nav" aria-label="Menú principal">
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul id="menu" class="nav__list">
+        <li><a href="index.html" class="nav__link">Inicio</a></li>
+        <li><a href="hk_lore.html" class="nav__link">Hollow Knight</a></li>
+        <li><a href="sk_lore.html" class="nav__link">Silksong</a></li>
+        <li><a href="p.html" class="nav__link">Personajes</a></li>
+        <li><a href="Galeria.html" class="nav__link is-active">Galería</a></li>
+        <li><a href="Contacto.html" class="nav__link">Contacto</a></li>
+      </ul>
+      <button class="theme__toggle" id="themeToggle" aria-label="Cambiar tema">
+        <img src="moon-1254-svgrepo-com.svg" alt="Modo oscuro" />
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2 class="section__title">Galería interactiva</h2>
+      <div class="gallery" id="gallery">
+        <div class="gallery__filters">
+          <button class="btn btn--chip is-active" data-filter="all">Todos</button>
+          <button class="btn btn--chip" data-filter="hk">Hollow Knight</button>
+          <button class="btn btn--chip" data-filter="ss">Silksong</button>
+        </div>
+        <div class="gallery__grid">
+          <figure class="gallery__item" data-category="hk">
+            <img src="hallownest.jpg" alt="HK 1" />
+            <figcaption>Hallownest</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="hk">
+            <img src="ciudad_lagrimas.jpg" alt="HK 2" />
+            <figcaption>Ciudad Lágrima</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="ss">
+            <img src="valle_oseo.jpg" alt="SS 1" />
+            <figcaption>Valle Óseo</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="ss">
+            <img src="carmelita.jpg" alt="SS 2" />
+            <figcaption>Carmelita - Acto 3</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="hk">
+            <img src="grimm__2.jpg" alt="HK 3" />
+            <figcaption>El Maestro de la Compañia Grimm</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="ss">
+            <img src="hornet__2.jpg" alt="SS 3" />
+            <figcaption>Hornet en Silksong</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="hk">
+            <img src="kingpale__2.jpg" alt="HK 4" />
+            <figcaption>El Rey Pálido</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="ss">
+            <img src="lace__2.jpg" alt="SS 4" />
+            <figcaption>Lace</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="hk">
+            <img src="bees-hornetr.jpg" alt="HK 5" />
+            <figcaption>Abejas y Hornet</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="ss">
+            <img src="bestia-campana.jpg" alt="SS 5">
+            <figcaption>Bestia Campana - Transporte de Pharloom</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="hk">
+            <img src="larvas-hk.jpg" alt="HK 6">
+            <figcaption>Larvas en Hallownest</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="ss">
+            <img src="pulgas-ss.jpg" alt="SS 6">
+            <figcaption>Pulgas en Silksong</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery__lightbox is-hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+          <button class="btn btn--icon gallery__close" id="lightboxClose" aria-label="Cerrar">×</button>
+          <img src="" alt="" id="lightboxImg" class="lightbox__img" />
+          <p id="lightboxCaption" class="lightbox__caption"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">© 2025 Wiki-Knight. Proyecto fan sin fines de lucro.</p>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <script src="tema.js" defer></script>
+  <script src="galeria.js" defer></script>
+</body>
+</html>

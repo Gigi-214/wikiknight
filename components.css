@@ -1,0 +1,11 @@
+.btn { transition: transform 0.08s ease, box-shadow 0.2s ease; }
+.btn:active { transform: scale(0.98); }
+.btn:is(:hover, :focus) { box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
+
+.card { transition: transform 0.2s ease; }
+.card:hover { transform: translateY(-3px); }
+
+.nav__link { transition: background 0.2s ease, color 0.2s ease; }
+
+.gallery__item { transition: transform 0.2s ease; }
+.gallery__item:hover { transform: scale(1.02); }

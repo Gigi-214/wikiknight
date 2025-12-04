@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wiki-Knight | Personajes</title>
+  <link rel="icon" href="wk-logo.png" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="components.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__brand">
+      <img src="wk-logo.png" alt="Logo Wiki-Knight" class="brand__logo" />
+      <h1 class="brand__title">Wiki-Knight</h1>
+    </div>
+    <nav class="nav" aria-label="Menú principal">
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul id="menu" class="nav__list">
+        <li><a href="index.html" class="nav__link">Inicio</a></li>
+        <li><a href="hk_lore.html" class="nav__link">Hollow Knight</a></li>
+        <li><a href="sk_lore.html" class="nav__link">Silksong</a></li>
+        <li><a href="p.html" class="nav__link is-active">Personajes</a></li>
+        <li><a href="Galeria.html" class="nav__link">Galería</a></li>
+        <li><a href="Contacto.html" class="nav__link">Contacto</a></li>
+      </ul>
+      <button class="theme__toggle" id="themeToggle" aria-label="Cambiar tema">
+        <img src="moon-1254-svgrepo-com.svg" alt="Modo oscuro" />
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2 class="section__title">Personajes principales</h2>
+
+      <article class="card card--media" id="p-hk-knight">
+        <img src="hollow__.jpg" alt="The Knight" class="card__img" />
+        <div class="card__body">
+          <h3 class="card__title">The Knight</h3>
+          <p class="card__text">Viajero silencioso con un propósito misterioso en Hallownest.</p>
+          <button class="btn btn--tertiary js-toggle" data-target="#p-hk-knight-more">Ver más</button>
+          <div class="card__details is-hidden" id="p-hk-knight-more">
+            <p class="card__text">Conecta con el vacío y enfrenta la infección.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--media" id="p-ss-hornet">
+        <img src="hornet__2.jpg" alt="Hornet" class="card__img" />
+        <div class="card__body">
+          <h3 class="card__title">Hornet</h3>
+          <p class="card__text">Guerrera ágil que domina la aguja y el hilo.</p>
+          <button class="btn btn--tertiary js-toggle" data-target="#p-ss-hornet-more">Ver más</button>
+          <div class="card__details is-hidden" id="p-ss-hornet-more">
+            <p class="card__text">Su historia revela la herencia y el deber. Antagonista de Hollow Knight y protagonista de Silksong</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--media" id="p-hk-quirrel">
+        <img src="quirrel__2.jpg" alt="Quirrel" class="card__img" />
+        <div class="card__body">
+          <h3 class="card__title">Quirrel</h3>
+          <p class="card__text">Explorador amable y enigmático de Hallownest.</p>
+          <button class="btn btn--tertiary js-toggle" data-target="#p-hk-quirrel-more">Ver más</button>
+          <div class="card__details is-hidden" id="p-hk-quirrel-more">
+            <p class="card__text">Su historia está llena de misterio y conexión con el vacío.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--media" id="p-ss-grandmother">
+        <img src="silkmother__2.jpg" alt="Grand Mother Silk" class="card__img" />
+        <div class="card__body">
+          <h3 class="card__title">Grand Mother Silk</h3>
+          <p class="card__text">Antagonista divina que gobierna Pharloom con poder y manipulación.</p>
+          <button class="btn btn--tertiary js-toggle" data-target="#p-ss-grandmother-more">Ver más</button>
+          <div class="card__details is-hidden" id="p-ss-grandmother-more">
+            <p class="card__text">Su influencia corrompe y controla a través del silk.</p>
+          </div>
+      </article>
+
+      <article class="card card--media" id="p-hk-monomon">
+        <img src="monomom.jpg" alt="Monomon the Teacher" class="card__img" />
+        <div class="card__body">
+          <h3 class="card__title">Monomon the Teacher</h3>
+          <p class="card__text">Sabia y enigmática, vinculada al vacío y la enseñanza.</p>
+          <button class="btn btn--tertiary js-toggle" data-target="#p-hk-monomon-more">Ver más</button>
+          <div class="card__details is-hidden" id="p-hk-monomon-more">
+            <p class="card__text">La maestra que reside en las profundidades del aula de la biblioteca.</p>
+          </div>
+      </article>
+
+      <article class="card card--media" id="p-ss-lace">
+        <img src="lace.jpg" alt="Lace, hija de la Gran Madre Seda" class="card__img" />
+        <div class="card__body">
+          <h3 class="card__title">Lace</h3>
+          <p class="card__text">Hija de la Gran Madre Seda, con un destino entrelazado con Pharloom.</p>
+          <button class="btn btn--tertiary js-toggle" data-target="#p-ss-lace-more">Ver más</button>
+          <div class="card__details is-hidden" id="p-ss-lace-more">
+            <p class="card__text">Su historia explora la herencia y el conflicto dentro del reino de seda.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--media" id="p-hk-herra">
+        <img src="herra.jpg" alt="Herra, La reina que duerme en las ruinas del nido. " class="card__img" />
+        <div class="card__body">
+          <h3 class="card__title">Herra</h3>
+          <p class="card__text">Antigua reina de la Tribu Araña de Nido Profundo, madre de Hornet y una de los tres Soñadores en Hallownest.</p>
+          <button class="btn btn--tertiary js-toggle" data-target="#p-hk-herra-more">Ver más</button>
+          <div class="card__details is-hidden" id="p-hk-herra-more">
+            <p class="card__text">Su legado y sacrificio son fundamentales para la historia de Hallownest.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">© 2025 Wiki-Knight. Proyecto fan sin fines de lucro.</p>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <script src="tema.js" defer></script>
+</body>
+</html>

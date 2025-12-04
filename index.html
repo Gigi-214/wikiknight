@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wiki-Knight | Inicio</title>
+  <link rel="icon" href="wk-logo.png" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="components.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__brand">
+      <img src="wk-logo.png" alt="Logo Wiki-Knight" class="brand__logo" />
+      <h1 class="brand__title">Wiki-Knight</h1>
+    </div>
+    <nav class="nav" aria-label="Menú principal">
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu">☰</button>
+      <ul id="menu" class="nav__list">
+        <li><a href="index.html" class="nav__link is-active">Inicio</a></li>
+        <li><a href="hk_lore.html" class="nav__link">Hollow Knight</a></li>
+        <li><a href="sk_lore.html" class="nav__link">Silksong</a></li>
+        <li><a href="p.html" class="nav__link">Personajes</a></li>
+        <li><a href="Galeria.html" class="nav__link">Galería</a></li>
+        <li><a href="Contacto.html" class="nav__link">Contacto</a></li>
+      </ul>
+      <button class="theme__toggle" id="themeToggle" aria-label="Cambiar tema">
+        <img src="moon-1254-svgrepo-com.svg" alt="Modo oscuro" />
+      </button>
+    </nav>
+  </header>
+
+  <section class="banner" aria-label="Banner principal">
+    <img src="banner_hk.jpg" alt="Banner Wiki-Knight" class="banner__img" />
+    <div class="banner__content">
+      <h2 class="banner__title">¡Adentrate en el gran universo de Hollow Knight y  Hollow Knight: Silksong!</h2>
+      <p class="banner__subtitle">Personajes, historias y secretos del metroidvania indie 🕸️</p>
+      <a href="https://hollowknight.fandom.com/wiki/Category:NPCs_(Hollow_Knight)" class="btn btn--primary">Ver más personajes</a>
+    </div>
+  </section>
+
+  <main>
+    <section class="cards">
+      <article class="card">
+        <h3 class="card__title">Hollow Knight</h3>
+        <p class="card__text">Sumérgete en Hallownest y descubre sus misterios.</p>
+        <a href="hk_lore.html" class="btn btn--secondary">Más info</a>
+      </article>
+      <article class="card">
+        <h3 class="card__title">Silksong</h3>
+        <p class="card__text">Acompaña a Hornet en tierras desconocidas.</p>
+        <a href="sk_lore.html" class="btn btn--secondary">Más info</a>
+      </article>
+      <article class="card">
+        <h3 class="card__title">Galería</h3>
+        <p class="card__text">Fanart en una galería interactiva.</p>
+        <a href="Galeria.html" class="btn btn--secondary">Ver galería</a>
+      </article>
+    </section>
+
+    <section class="carousel" aria-label="Carrusel de imágenes">
+      <h2 class="section__title">Destacados</h2>
+      <div class="carousel__viewport" id="carouselViewport">
+        <div class="carousel__track" id="carouselTrack">
+          <img src="cilantro_perejil.jpg" alt="Hollow Knight 1" class="carousel__item" /><br><br>
+          <img src="desafio_admin.jpg" alt="Silksong 1" class="carousel__item" />
+          <img src="no_geo.jpg" alt="Hollow Knight 2" class="carousel__item" />
+          <img src="carambolas.jpg" alt="Silksong 2" class="carousel__item" />
+          <img src="televisa.jpg" alt="Hollow Knight 3" class="carousel__item" />
+          <img src="lace.jpg" alt="Silksong 3" class="carousel__item" />
+          <img src="huh_pablo.jpg" alt="Hollow Knight 4" class="carousel__item" />
+          <img src="absolute_shaw.jpg" alt="Silksong 4" class="carousel__item" />
+        </div>
+      </div>
+      <div class="carousel__controls">
+        <button class="btn btn--icon" id="prevBtn" aria-label="Anterior">‹</button>
+        <button class="btn btn--icon" id="nextBtn" aria-label="Siguiente">›</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">© 2025 Wiki-Knight. Proyecto fan sin fines de lucro.</p>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <script src="tema.js" defer></script>
+  <script src="carrusel.js" defer></script>
+</body>
+</html>
